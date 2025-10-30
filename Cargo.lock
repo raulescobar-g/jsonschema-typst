@@ -296,7 +296,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "jsonschema-typst"
+name = "jsonschemeyst"
 version = "0.0.1"
 dependencies = [
  "getrandom",
