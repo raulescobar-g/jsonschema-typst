@@ -270,16 +270,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "json-validator"
-version = "0.1.0"
-dependencies = [
- "getrandom",
- "jsonschema",
- "serde_json",
- "wasm-minimal-protocol",
-]
-
-[[package]]
 name = "jsonschema"
 version = "0.33.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -303,6 +293,16 @@ dependencies = [
  "serde",
  "serde_json",
  "uuid-simd",
+]
+
+[[package]]
+name = "jsonschema-typst"
+version = "0.0.1"
+dependencies = [
+ "getrandom",
+ "jsonschema",
+ "serde_json",
+ "wasm-minimal-protocol",
 ]
 
 [[package]]
