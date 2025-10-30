@@ -20,23 +20,20 @@ validate JSON data against JSON Schema specifications (draft 7 and later).
 The package exports a single function `validate` that takes a JSON schema and
 JSON data as strings:
 
-````typst
+```typst
 #import "@preview/jsonschema:0.0.1": validate
 
-#let schema = ```
-{
-  "type": "object",
-  "properties": {
-    "name": { "type": "string" },
-    "age": { "type": "number" }
+#let schema = "{
+  \"type\": \"object\",
+  \"properties\": {
+    \"name\": { \"type\": \"string\" },
+    \"age\": { \"type\": \"number\" }
   },
-  "required": ["name"]
-}
-````
+  \"required\": [\"name\"]
+}"
 
-#let data = ``` { "name": "Alice", "age": 30 }
+#let data = "{ \"name\": \"Alice\", \"age\": 30 }"
 
-```
 #let result = validate(schema, data)
 ```
 
@@ -71,17 +68,17 @@ validate(schema: str, data: str) -> auto
 
 ## Examples
 
-See the [examples](./examples/) directory for comprehensive usage examples:
+See the [examples](https://github.com/raulescobar-g/jsonschema-typst/tree/main/examples) directory for comprehensive usage examples:
 
-- [`basic.typ`](./examples/basic.typ) - Simple type validation
-- [`object.typ`](./examples/object.typ) - Object property validation
-- [`array.typ`](./examples/array.typ) - Array validation with constraints
-- [`enum.typ`](./examples/enum.typ) - Enum value validation
-- [`numbers.typ`](./examples/numbers.typ) - Number constraint validation
-- [`strings.typ`](./examples/strings.typ) - String format and pattern validation
-- [`nested.typ`](./examples/nested.typ) - Nested object structures
-- [`conditional.typ`](./examples/conditional.typ) - Conditional schema logic
-- [`error-handling.typ`](./examples/error-handling.typ) - Handling validation
+- [`basic.typ`](https://github.com/raulescobar-g/jsonschema-typst/blob/main/examples/basic.typ) - Simple type validation
+- [`object.typ`](https://github.com/raulescobar-g/jsonschema-typst/blob/main/examples/object.typ) - Object property validation
+- [`array.typ`](https://github.com/raulescobar-g/jsonschema-typst/blob/main/examples/array.typ) - Array validation with constraints
+- [`enum.typ`](https://github.com/raulescobar-g/jsonschema-typst/blob/main/examples/enum.typ) - Enum value validation
+- [`numbers.typ`](https://github.com/raulescobar-g/jsonschema-typst/blob/main/examples/numbers.typ) - Number constraint validation
+- [`strings.typ`](https://github.com/raulescobar-g/jsonschema-typst/blob/main/examples/strings.typ) - String format and pattern validation
+- [`nested.typ`](https://github.com/raulescobar-g/jsonschema-typst/blob/main/examples/nested.typ) - Nested object structures
+- [`conditional.typ`](https://github.com/raulescobar-g/jsonschema-typst/blob/main/examples/conditional.typ) - Conditional schema logic
+- [`error-handling.typ`](https://github.com/raulescobar-g/jsonschema-typst/blob/main/examples/error-handling.typ) - Handling validation
   errors
 
 ## Error Handling
