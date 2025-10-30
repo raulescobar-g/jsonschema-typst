@@ -4,4 +4,5 @@ RUSTFLAGS='--cfg getrandom_backend="custom"' cargo build --release --target wasm
 cp ./target/wasm32-unknown-unknown/release/jsonschemeyst.wasm ./typst-package/jsonschemeyst.wasm
 
 cp README.md ./typst-package/README.md
+cp LICENSE.md ./typst-package/LICENSE.md
 
