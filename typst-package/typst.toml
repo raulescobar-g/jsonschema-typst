@@ -1,0 +1,17 @@
+[package]
+name = "jsonschema"
+version = "0.0.1"
+entrypoint = "lib.typ"
+authors = ["Raul Escobar"]
+license = "MIT"
+description = "jsonschema validator for typst"
+compiler = "0.14.0"
+
+categories = [ "validation" ]
+keywords = [
+    "wasm",
+    "rust",
+    "json",
+    "schema",
+    "validation"
+]
